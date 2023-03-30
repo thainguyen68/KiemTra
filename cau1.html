@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    let point = [0,9, 1, 2, 3, 4, 5, 6, 7, 8, 10]
+    let num;
+    for (let i = 0; i < point.length; i++) {
+        for (let j = i + 1; j < point.length; j++) {
+            if (point[i] > point[j]) {
+                num = point[i];
+                point[i] = point[j];
+                point[j] = num;
+            }
+        }
+    }
+    console.log(point[point.length-3])
+</script>
+</body>
+</html>
