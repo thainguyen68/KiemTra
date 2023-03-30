@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let str = prompt("enter string here")
+        let str1 = prompt("enter string here")
+        function checkString (str,str1) {
+            let arr = str.split("");
+            let arr1 = str1.split("");
+            for (let i = 0; i < arr.length; i++) {
+                for (let j = 0; j < arr1.length; j++) {
+                    if (arr[i] === arr1[j]) {
+                        return true
+                    } else {
+                        return false
+                    }
+                }
+            }
+        }
+        console.log(checkString(str,str1))
+    </script>
+
+    </script>
+</body>
+</html>
